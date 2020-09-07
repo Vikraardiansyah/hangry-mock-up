@@ -1,13 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  padding: 0 65px !important;
+}
+
+.navbar {
+  background-color: white;
+  height: 96px;
+}
+
+.logo {
+  width: 138px;
+  height: 48px;
+}
+
+.bar {
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+}
+
+.nav-text {
+  margin: 0 20px;
+  font-weight: 500;
+  color: black !important;
+}
+
+.nav-text-download {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #a30926 !important;
+}
+
+.jumbotron {
+  background-color: #fafafa !important;
+}
+
+.text-question {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #303030;
+  opacity: 0.8;
+}
+
+.text-h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+
+  color: #303030;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 !important;
+  }
+  .navbar {
+    height: 48px;
+    z-index: 1;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1));
+  }
+  .logo {
+    width: 64px;
+    height: 24px;
+    margin-top: -15px;
+  }
+  .bar {
+    display: block;
+  }
+  .nav-text {
+    margin: 0;
+  }
+  .nav-text-download {
+    margin: 0;
+  }
+  .nav-item {
+    margin: 0 -15px;
+    padding: 0 15px;
+    background-color: white;
+    z-index: 100;
+  }
 }
