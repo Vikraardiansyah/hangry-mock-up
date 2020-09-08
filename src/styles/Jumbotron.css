@@ -1,0 +1,85 @@
+.jumbotron {
+  background-color: #fafafa !important;
+  padding-bottom: 0 !important;
+}
+
+.text-question {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #303030;
+  opacity: 0.8;
+}
+
+.button-play {
+  margin: 20px 0 0 -15px !important;
+}
+
+.playstore {
+  margin-top: 20px;
+  width: 216px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.appstore {
+  margin: 20px 0 0 -15px;
+  width: 216px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.iphone {
+  margin-left: 40px;
+}
+
+.iphonehalf {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .appstore {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .text-question {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .button-play {
+    margin: -20px 0 0 -15px !important;
+  }
+  .appstore {
+    margin-left: 0;
+    width: 128px;
+    height: 38px;
+  }
+
+  .playstore {
+    width: 128px;
+    height: 38px;
+  }
+
+  .iphone {
+    margin-top: 35px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .iphonefull {
+    display: none;
+  }
+
+  .iphonehalf {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    padding: 0 !important;
+  }
+}

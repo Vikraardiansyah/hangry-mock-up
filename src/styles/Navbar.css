@@ -1,0 +1,59 @@
+.navbar {
+  background-color: white;
+  height: 96px;
+}
+
+.logo {
+  width: 138px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.bar {
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.nav-text {
+  margin: 0 24px;
+  font-weight: 500;
+  cursor: pointer;
+  color: black !important;
+}
+
+.nav-text-download {
+  margin-left: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #a30926 !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    height: 48px;
+    z-index: 1;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1));
+  }
+  .logo {
+    width: 64px;
+    height: 24px;
+    margin-top: -15px;
+  }
+  .bar {
+    display: block;
+  }
+  .nav-text {
+    margin: 0;
+  }
+  .nav-text-download {
+    margin: 0;
+  }
+  .nav-item {
+    margin: 0 -49px;
+    padding: 0 49px;
+    background-color: white;
+  }
+}
