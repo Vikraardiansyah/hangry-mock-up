@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Jumbotron } from "reactstrap";
+import { isAndroid, isIOS } from "react-device-detect";
 import Playstore from "../assets/playstore.png";
 import Appstore from "../assets/appstore.png";
 import Iphone from "../assets/iphone.png";
@@ -18,12 +19,20 @@ const JumbotronComp = () => {
             </p>
             <Container fluid className="button-play">
               <Row>
-                <Col xl="7">
-                  <img src={Playstore} alt="playstore" className="playstore" />
-                </Col>
-                <Col xl="5">
-                  <img src={Appstore} alt="appstore" className="appstore" />
-                </Col>
+                {isIOS ? null : (
+                  <Col xl="7">
+                    <img
+                      src={Playstore}
+                      alt="playstore"
+                      className="playstore"
+                    />
+                  </Col>
+                )}
+                {isAndroid ? null : (
+                  <Col xl="5">
+                    <img src={Appstore} alt="appstore" className="appstore" />
+                  </Col>
+                )}
               </Row>
             </Container>
           </Col>

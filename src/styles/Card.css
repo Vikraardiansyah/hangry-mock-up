@@ -7,6 +7,7 @@
 .card {
   border-style: none !important;
   width: 350px !important;
+  cursor: pointer;
 }
 
 .image-card {
@@ -25,7 +26,7 @@
 }
 
 .title-card {
-  margin-top: 20px;
+  margin: 20px 0 0 3px;
   font-weight: bold;
   font-size: 32px;
   line-height: 39px;
@@ -34,7 +35,7 @@
 }
 
 .text-card {
-  margin-top: -8px;
+  margin-left: 3px;
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
@@ -46,7 +47,15 @@
   margin-left: 8px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1199px) {
+  .image-rounded-card {
+    width: 60px !important;
+    top: 20px !important;
+    left: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
   .card-content {
     margin-top: 5px;
   }
@@ -58,13 +67,34 @@
   }
 
   .title-card {
-    margin-top: 5px;
+    margin: 5px 0 0 3px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .text-card {
+    margin: -5px 0 0 3px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .arrow-right {
+    margin-top: -2px;
+    margin-left: 4px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title-card {
+    margin: 5px 0 0 3px;
     font-size: 14px;
     line-height: 21px;
   }
 
   .text-card {
-    margin-top: -15px;
+    margin: -10px 0 0 3px;
     font-size: 10px;
     line-height: 15px;
   }

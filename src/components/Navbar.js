@@ -24,6 +24,7 @@ const NavbarComp = () => {
           <img src={Logo} alt="logo" className="logo" />
         </NavbarBrand>
         <img src={Bars} className="ml-auto bar" alt="logo" onClick={toggle} />
+
         <Collapse isOpen={isOpen} className="nav-item" navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
