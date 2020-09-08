@@ -1,4 +1,6 @@
 # Hangry
+<img width="150" src="./public/hangrylogo.png"/>
+
 ## Usage for development
 1. Open your terminal or command prompt
 2. Type `git clone https://github.com/Vikraardiansyah/hangry-mock-up.git`
