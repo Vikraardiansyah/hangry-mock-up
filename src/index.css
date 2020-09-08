@@ -1,21 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;900&display=swap");
 
 body {
   font-family: "Inter", sans-serif;
 }
 
 .container {
-  padding: 0 65px !important;
+  padding: 0 15px !important;
 }
 
 .navbar {
   background-color: white;
   height: 96px;
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1));
 }
 
 .logo {
   width: 138px;
   height: 48px;
+  cursor: pointer;
 }
 
 .bar {
@@ -23,26 +25,30 @@ body {
   width: 20px;
   height: 20px;
   margin-top: -10px;
+  cursor: pointer;
 }
 
 .nav-text {
-  margin: 0 20px;
+  margin: 0 24px;
   font-weight: 500;
+  cursor: pointer;
   color: black !important;
 }
 
 .nav-text-download {
-  margin-left: 20px;
+  margin-left: 24px;
   font-weight: bold;
+  cursor: pointer;
   color: #a30926 !important;
 }
 
 .jumbotron {
   background-color: #fafafa !important;
+  padding-bottom: 0 !important;
 }
 
 .text-question {
-  font-style: normal;
+  margin-top: 60px;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
@@ -51,8 +57,7 @@ body {
   opacity: 0.8;
 }
 
-.text-h1 {
-  font-style: normal;
+.text-bold {
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
@@ -60,10 +65,88 @@ body {
   color: #303030;
 }
 
-@media only screen and (max-width: 768px) {
+.text-brand {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #707070;
+}
+
+.button-play {
+  margin: 20px 0 0 -15px !important;
+}
+
+.playstore {
+  margin-top: 20px;
+  width: 216px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.appstore {
+  margin: 20px 0 0 -15px;
+  width: 216px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.iphone {
+  margin-left: 40px;
+}
+
+.iphonehalf {
+  display: none;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.image-card {
+  border-radius: 16px;
+  width: 350px;
+  filter: drop-shadow(0px 24px 32px rgba(0, 0, 0, 0.04)),
+    drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.04)),
+    drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.04)),
+    drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.04));
+}
+
+.title-card {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #303030;
+}
+
+.text-card {
+  margin-top: -8px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #5a5a5a;
+}
+
+.arrow-right {
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .appstore {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .container {
     padding: 0 !important;
   }
+
   .navbar {
     height: 48px;
     z-index: 1;
@@ -84,9 +167,91 @@ body {
     margin: 0;
   }
   .nav-item {
-    margin: 0 -15px;
-    padding: 0 15px;
+    margin: 0 -49px;
+    padding: 0 49px;
     background-color: white;
-    z-index: 100;
+  }
+
+  .text-question {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .text-bold {
+    margin-top: -10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .text-brand {
+    margin-top: -8px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .button-play {
+    margin: -20px 0 0 -15px !important;
+  }
+  .appstore {
+    margin-left: 0;
+    width: 128px;
+    height: 38px;
+  }
+
+  .playstore {
+    width: 128px;
+    height: 38px;
+  }
+
+  .iphone {
+    margin-top: 35px;
+    width: 300px;
+  }
+
+  .card-content {
+    margin-top: 5px;
+  }
+
+  .image-card {
+    width: 156px;
+    height: 167px;
+  }
+
+  .title-card {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .text-card {
+    margin-top: -15px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .arrow-right {
+    margin-top: -2px;
+    margin-left: 4px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .iphonefull {
+    display: none;
+  }
+
+  .iphonehalf {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main {
+    padding: 0 15px !important;
   }
 }
